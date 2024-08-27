@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>User Information</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+      <div class="main">
+            <h1>User Information</h1>
+            <p>Welcome, [Username]!</p>
+            
+            <h3>Your Details:</h3>
+            <ul>
+                  <li><strong>Username:</strong> [Username]</li>
+                  <li><strong>Email:</strong> [User Email]</li>
+                  <li><strong>Account Created:</strong> [Date]</li>
+                  <!-- Add more details as needed -->
+            </ul>
+
+            <div class="wrap">
+                  <button onclick="logout()">
+                        Logout
+                  </button>
+            </div>
+      </div>
+
+      <script>
+            // Example: Replace placeholders with real user data
+            document.querySelector("p").innerText = "Welcome, Song!";
+            document.querySelector("li:nth-child(1)").innerText = "Username: ธนดล";
+            document.querySelector("li:nth-child(2)").innerText = "Email: thanadol@example.com";
+            document.querySelector("li:nth-child(3)").innerText = "Account Created: January 1, 2020";
+
+            function logout() {
+                  // Handle logout logic here
+                  window.location.href = "login.html";
+            }
+      </script>
+</body>
+
+</html>
